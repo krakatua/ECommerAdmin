@@ -11,7 +11,6 @@ export default async function handle(req, res) {
   switch (req.method) {
       case "POST":
           const { email } = req.body;
-          console.log(email)
 
           const sameEmail = await Admin.findOne({ email: email });
     if (sameEmail) {

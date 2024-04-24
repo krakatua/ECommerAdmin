@@ -64,7 +64,6 @@ export default function ProductForm({
         return [...oldImages, ...res.data.links];
       });
       setIsUploading(false);
-      console.log(res.data);
     }
     {/*
       
@@ -73,7 +72,6 @@ export default function ProductForm({
         return [...oldImages, ...res.data.links];
       });
       setIsUploading(false);
-      console.log(res.data);
     
   */}
 
