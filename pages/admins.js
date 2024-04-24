@@ -26,7 +26,6 @@ export default function Admins() {
       },
       body: JSON.stringify({ email }),
     }).then((res) => {
-      console.log(res);
       Swal.fire({
         title: `Admin created!`,
         icon: "success",
@@ -34,7 +33,6 @@ export default function Admins() {
       setEmail("");
       loadAdmins();
     }).catch((err) => {
-        console.log(err)
         Swal.fire({
             title: `$Error!`,
             text: `${err.response.data.message}`,
